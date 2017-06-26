@@ -1,10 +1,11 @@
 #!/bin/bash
-#Sysinfo.io
-### Change paths immediately below to suit your needs ###
+#sysinfo.io
+#change paths below to suit your needs
 dockerdir_new='/docker/var/'
 dockerdir_old='/var/lib/docker/'
-#--------------------------------------------------------
-dockerdir_new2=$(sed 's/\//\\\//g' <<< $dockerdir_new)
+
+set -e
+dockerdir_new2=$(echo "$dockerdir_new" | sed 's/\//\\\//g')
 systemctl stop docker
 mkdir -p $dockerdir_new
 rsync -a $dockerdir_old* $dockerdir_new
