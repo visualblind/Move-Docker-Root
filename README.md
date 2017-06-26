@@ -1,7 +1,7 @@
 # Move-Docker-Root
 Shell script to move the Docker Root directory on Ubuntu 16.04 Xenial.
 
-To use this script simply <code>chmod +x move-docker-root.sh</code> and edit the line <code>/dockerdir_new='/docker/var/'</code> to reflect your intended new Docker Root location, then run with <code>./move-docker-root.sh</code>.
+To use this script simply edit the line <code>/dockerdir_new='/docker/var/'</code> to reflect your intended new Docker Root location and <code>chmod +x move-docker-root.sh</code>, then run with <code>./move-docker-root.sh</code>.
 
 Tested working on:
 
