@@ -10,7 +10,7 @@ systemctl stop docker
 mkdir -p $dockerdir_new
 rsync -a $dockerdir_old* $dockerdir_new
 sed -i.bak "/ExecStart=\/usr\/bin\/dockerd \-H fd:\/\//c ExecStart=\/usr\/bin\/dockerd \-H fd:\/\/ -g ${dockerdir_new2}" /lib/systemd/system/docker.service
-mv $dockerdir_old /var/lib/docker.bak/
+mv $dockerdir_old* /var/lib/docker.bak/
 ln -s $dockerdir_new /var/lib/docker
 systemctl daemon-reload
 systemctl start docker.service
