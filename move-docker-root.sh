@@ -1,5 +1,5 @@
 #!/bin/bash
-# Travis Runyard 06-25-2018
+# Travis Runyard 06-25-2017
 # https://sysinfo.io/ubuntu-16-04-move-docker-root/
 # change paths below to suit your needs
 dockerdir_new='/docker/var/'
