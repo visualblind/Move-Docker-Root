@@ -1,6 +1,7 @@
 #!/bin/bash
-#sysinfo.io
-#change paths below to suit your needs
+# Travis Runyard 06-25-2018
+# https://sysinfo.io/ubuntu-16-04-move-docker-root/
+# change paths below to suit your needs
 dockerdir_new='/docker/var/'
 dockerdir_old='/var/lib/docker/'
 
